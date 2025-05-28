@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,20 +9,131 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Concert One', cursive;
+      color: #fff;
+      background: url('background-pattern.png') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background-color: #150c2b; /* fallback */
+    }
 
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/20fcbb591d47f77f8a6cab37f/a24a0e97b7cc10a0f5b08f70b.js");</script>
-  
+    h1 {
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+      color: #ffe74c;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #ffb347;
+      color: #222;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      margin: 1.5rem 0;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ffd166;
+    }
+
+    .signup-form {
+      margin-top: 2rem;
+    }
+
+    .signup-form input[type="email"] {
+      padding: 1rem;
+      border-radius: 30px;
+      border: none;
+      width: 250px;
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+
+    .signup-form input[type="submit"] {
+      padding: 1rem 2rem;
+      background-color: #ffb347;
+      color: #222;
+      font-weight: bold;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .signup-form input[type="submit"]:hover {
+      background-color: #ffd166;
+    }
+
+    .badges-section {
+      margin-top: 3rem;
+      padding: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #ffe74c;
+      color: #150c2b;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Wooking For Love</h1>
   <h2>Find Your Cosmic Connection</h2>
-  <p>Swipe your way through the galaxy of groovy souls. Wooks, festie queens, cosmic cowbowys, greesy gators, and sparkle ponies — your twin flame awaits.</p>
-  <a href="#" class="button">Join the Waitlist</a>
+  <p>Swipe your way through the galaxy of groovy souls. Wooks, festie queens, dusty dancers — your twin flame awaits.</p>
+
+  <div class="signup-form">
+    <form action="https://YOUR-MAILCHIMP-URL" method="post" target="_blank" novalidate>
+      <input type="email" name="EMAIL" placeholder="Enter your email" required>
+      <input type="submit" value="Join the Waitlist">
+    </form>
+  </div>
 
   <h2>About the App</h2>
   <p>Built by festie fam, for the festie fam. We’re building the ultimate dating and vibing platform for the wild, the weird, and the wonderful. No suits. No stress. Just vibes.</p>
+
+  <div class="badges-section">
+    <h2>Coming Soon: Festival Matching</h2>
+    <p>Connect with fellow wooks attending your favorite events and match based on festie plans and vibes.</p>
+    <div>
+      <p>🎪 Lightning in a Bottle <span class="badge">Going</span></p>
+      <p>🌲 Sonic Bloom <span class="badge">Vibing</span></p>
+      <p>🌈 Electric Forest <span class="badge">Seeking Tent Partner</span></p>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 Wooking For Love, LLC. All Rights Reserved.
